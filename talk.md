@@ -42,74 +42,125 @@ Brain Imaging Center, Helen Wills Neuroscience Institute, UC Berkeley
 
 > * Button et al., 2013
 
-## In general: Editorials / high profile journals
+## In general: Editorials in high profile journals
 
 > * In general: Nature, "Reducing our irreproducibility", 2013.
     - New mechanism for independently replicating needed 
     - Easy to misinterpret artefacts as biologically important
     - Too many sloppy mistakes 
-    - Revised standard for statistical evidence (PNAS 2013)
 
 ---------------
 
 # What about brain imaging ? Some - _but few_ - facts
 
-> * Jossua Carp (2013): report does not allow replication of to find methodological issues
-    """ For example, while Brown and Braver (2005) claimed
-    that activation in the anterior cingulate cortex (ACC) is
-    sensitive to the likelihood of committing an error,
-    Nieuwenhuis, Tanja, Mars, Botvinick, and Hajcak (2007)
-    reported no relationship between ACC activation and error
-    likelihood."""
+> * Jossua Carp (2013): report does not allow replication or to find methodological issues
 
-> * Analysis of large databases showing low condordance of small sample group analysis (Thirion et al., 2007)
+   For example, while Brown and Braver (2005) claimed that activation in the
+   anterior cingulate cortex (ACC) is sensitive to the likelihood of committing
+   an error, Nieuwenhuis, Tanja, Mars, Botvinick, and Hajcak (2007) reported no
+   relationship between ACC activation and error likelihood."
 
 > * Reproducibility: confirmed to be very poor by some 
-    - Boekel, W., et al. (2013). A purely confirmatory
-      replication study of structural brain-behavior
-      correlations. Journal of Neuroscience 12, 4745–4765.
-    - 5 studies, 17 findings : Baysian analysis favored null hypothesis
-    - Problem: only 36 subjects, while most original studies
+    - Boekel, W., et al. (J. Neuroscience 2013) : replication study of structural brain-behavior correlations.
+    - 5 studies, 17 findings: Bayesian analysis favored null hypothesis
+    - But: only 36 subjects, while most original studies were better powered
+
 > * The Autism example: Toro et al., Corpus callosum size example.
+
+> * Analysis of large databases showing low concordance of small sample group analysis (Thirion et al., 2007)
+
+<div class="notes">
+
+R Toro: 
+    We conducted a meta-analysis of the literature which suggested a
+    statistically significant difference. However, the studies included were
+    heavily underpowered: on average only 20% power to detect differences of
+    0.3 standard deviations, which makes it difficult to establish the reality
+    of such a difference. We therefore studied the size of the corpus callosum
+    among 694 subjects (328 patients, 366 controls) from the Abide cohort.
+    Despite having achieved 99% power to detect statistically significant
+    differences of 0.3 standard deviations, we did not observe any.
+</div>
 
 # Causes and Impact
 
-> * Statistical 
-> * Computational 
-> * Social 
+## Statistical 
+## Computational 
+## Social 
 
 ----------------------------
 
-## Statistical causes:
+## Statistical causes:(1)
 
 > * Lack of understanding of statistical issues and Power computation
 > * The usual issues apply:
-    > - low power studies (Button et al, 2013)
-    > - P-hacking: Simmons et al. 2011, Simmonshon et al., 2014
-> * P value evil: when will we turn to Baysian evidence?
-> * File drawer problem: emmergence of complex H0/H1
+>       - low power studies (Button et al, 2013)
+>       - P-hacking: Simmons et al. 2011, Simmonshon et al., 2014
+
+## Example  
+
+> * From imaging genetics:
+> * ![Molendijk, 2012](./img/molendijk_2012_f4.pdf) 
+
+----------------------------
+
+## Statistical causes:(2)
+
+> * P value evil: will we eventually turn to Bayesian evidence?
+> * No good understanding of the necessity to report null results 
+   - File drawer problem (Rosenthal, 1979)
+   - Emmergence of complex H0/H1, A. Afraz, 2014. 
+
+## And if we stick to p-values: 
+
+> * Which one to pick: Revised standard for statistical evidence (PNAS Johnson 2013)
+> * ![Johnson 2013, Significance](./img/Johnson_significance.pdf) 
 
 
+<div class="notes">
+
+    For instance, H1 “neurons in brain area X encode visual memories” can be
+    contrasted against H0 “neurons in brain area X does not encode visual
+    memories”. Even if H1 is not true, if only positive results get published,
+    after a few years there will be plenty of published papers showing that
+    neurons in brain area X encode visual memories. Then, some scientists might
+    hypothesize a more complex H1: “neurons in area X encode visual memories by
+    synchronization of their electrical activity”, now the null hypothesis
+    would be “neurons in area X encode visual memories without synchronization
+    of their activity”.  In this new null hypothesis, involvement of area X
+    neurons in memory encoding is already assumed. This second null hypothesis
+    can be falsely rejected again in contrast to an even more complex
+    scientific model, creating an even more complex set of default beliefs and
+    null hypotheses. 
+</div>
 ----------------------------
 
 ## Computational causes:
 
-> * Biologists and MDs are rarely appropriately trained in computation - but most brain imaging findings rely heavily on computations
-> * Clairebout's "Publication is an advertisement, scholarship lies in the code" (Truer for applied math field, but also valid in Brain Imaging if models are included)
+> * Biologists and MDs are rarely well trained in computation - but most brain imaging findings rely heavily on computations
+> * Claerbout's """An article about computational science in a scientific
+   publication is not the scholarship itself, it is merely advertising of the
+   scholarship. The actual scholarship is the complete software development
+   environment and the complete set of instructions which generated the
+   figures.""""
+   (Truer for applied math field, but also valid in Brain Imaging)
 > * Meta data capture and curation not implemented (parameters and process of data generation), no standards for meta data
-> * Computational environment packaging not used enough (cf Neurodebian)
+> * Computational environment packaging not used (Neurodebian IMI, Docker, ...)
 
 ----------------------------
 
 ## Social causes
 
-> * High pressure for publication in competitive environment
-> * Publication based reward system (carreer, grants, fame, etc) is not working towards good science (careful, replicated, reproduced)
-> * The file drawer problem: how this can delay scientific revolution (A. Afraz, 'We could all be astronomers')
-> * System favors high risk project and publication 
+> * Publication based reward system (career, grants, fame, etc) is in general not working
+    towards good science:
+    - favors speed over careful, __re-usable__, reproduced studies
+    - favors high risk and rapid publications
+    - impeeds data and code sharing even for publicly funded research
+> * High pressure for publication in competitive environment makes this a serious problem
+> * Positive finding publication bias and the file drawer problem 
+   - how this can delay scientific revolution (A. Afraz, 'We could all be astronomers')
 
 ----------------------------
-
 
 ## Impact
 
@@ -125,11 +176,11 @@ Brain Imaging Center, Helen Wills Neuroscience Institute, UC Berkeley
 > * Augment the awareness of these issues, advocate for data and code sharing as the standard in our field
 > * Adopt genetic research standards: every result should be replicated 
 > * Adopt clinical trial standards and pre-registration
-> * Train the new generation of scientist in computation, statististics
+> * Train the new generation of scientist in computation, statistics
 
-# Acknowledgement & Conclusion 
+# Acknowledgement 
 
-* My colleagues at Berkeley  (M. Brett, J. Millman, F. Perez, the Simpace group)
+* My colleagues at Berkeley  (M. Brett, J. Millman, F. Perez, the Simpace group: Dan, Courtney, Arielle, Katy, Kay, ...)
 * My colleagues at INCF (Mathew Abrams, Linda Layon)
 * My colleagues of Nidash (David Kennedy, Satra Ghosh, Chris Gorgowleski, Nolan Nichols, Dave Keator, Camille Maumet, Guillaume Flandin, Tom Nichols, Russ Poldrack, etc)
 
