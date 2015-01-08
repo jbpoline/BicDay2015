@@ -9,32 +9,24 @@ Brain Imaging Center, Helen Wills Neuroscience Institute, UC Berkeley
 
 # Outline
 >     
-> * Science Reproducibility crisis evidence
-> * What about brain imaging ? Some - but few - facts
+> * Evidence for a crisis in reproducibility  
+> * What about brain imaging ? 
 > * Causes  
 > * Impact
 > * What shall we do about it 
 
-> * Mesh terms reproducibility of results (100 in 2010) ![Mesh terms 2012](./img/mesh_term_reproducibility_results.pdf)
+> * Mesh terms "reproducibility of results" (100 in 2010) ![Mesh terms 2012](./img/mesh_term_reproducibility_results.pdf)
 
 # Science finding Reproducibility crisis evidence
 
 ## Preclinical oncology
 
-> * Begley C.G. & Ellis L. Nature, (2012): "6 out of 53 key findings in pre-clinical oncology could be fully replicated"
+> * Begley C.G. & Ellis L. Nature, (2012): "Only 6 out of 53 key findings in pre-clinical oncology could be fully replicated"
 
 ## Epidemiology
 
-> * “The FP/FN Ratio in Epidemiologic Studies”, Ioannidis, 2011. 
 > * Reproducible Epidemiologic Research, Peng et al, 2006.
-
-## In social sciences and in psychology
-
-> * Reproducibility Project in Psychology  (Open Science Framework)
-> * Simmons, et al. “... Undisclosed Flexibility ... Allows Presenting Anything as Significant.” 2011. 
-> * In cognitive neuroscience:  Barch, Deanna, and Yarkoni. “Special Issue on Reliability and Replication in Cognitive and Affective Neuroscience Research.”  2013.
-
----------------
+> * “High FP/FN Ratio in Epidemiologic Studies”, Ioannidis, 2011. 
 
 ## Genetics
 
@@ -42,35 +34,44 @@ Brain Imaging Center, Helen Wills Neuroscience Institute, UC Berkeley
 > * The failing concept of endophenotype (Iacono, Psychophysiology, 2014)
 > * Many references and warnings: eg:"Drinking from the fire hose ..." by Hunter and Kraft, 2007.
 
+---------------
+
+## In social sciences, psychology, cognitive neuroscience
+
+> * Reproducibility Project in Psychology  (Open Science Framework)
+> * Simonshon et al. "P-curve", “Evaluating Replication Results” 2014, 2013. 
+> * Special Issue on “Reliability and Replication in Cognitive and Affective Neuroscience Research.” Barch, Deanna, and Yarkoni, Cogn Affect Behav Neurosci, 2013.
+
 ## Neuroscience
 
-> * Button et al., 2013
+> * Button et al., Nature Neuroscience, 2013
 
 ## In general: Editorials in high profile journals
 
-> * In general: Nature, "Reducing our irreproducibility", 2013.
+> * Nature, "Reducing our irreproducibility", 2013.
     - New mechanism for independently replicating needed 
     - Easy to misinterpret artefacts as biologically important
     - Too many sloppy mistakes
-> * NIH plans to enhance reproducibility (Nature, 2014, Collins and Tabak)
+> * NIH plans to enhance reproducibility. Collins and Tabak, Nature, 2014.
 
 ---------------
 
 # What about brain imaging ? Some - _but few_ - facts
 
-> * Jossua Carp (2013): report does not allow replication or to find methodological issues
 
-   For example, while Brown and Braver (2005) claimed that activation in the
-   anterior cingulate cortex (ACC) is sensitive to the likelihood of committing
-   an error, Nieuwenhuis, Tanja, Mars, Botvinick, and Hajcak (2007) reported no
-   relationship between ACC activation and error likelihood."
+> * Publication does not allow replication or to find methodological issues (J. Carp Cogn Affect Behav Neurosci, 2013): 
 
-> * Reproducibility: confirmed to be very poor by some 
-    - Boekel, W., et al. (J. Neuroscience 2013) : replication study of structural brain-behavior correlations.
+  "For example, while Brown and Braver (2005) claimed that activation in the
+  anterior cingulate cortex (ACC) is sensitive to the likelihood of committing
+  an error, Nieuwenhuis, Tanja, Mars, Botvinick, and Hajcak (2007) reported no
+  relationship between ACC activation and error likelihood."
+
+> * When attempted, replication is poor:  
+    - Boekel, W., et al. (Cortex 2013) : replication study of structural brain-behavior correlations.
     - 5 studies, 17 findings: Bayesian analysis favored null hypothesis
     - But: only 36 subjects, while most original studies were better powered
 
-> * Autism example: Toro et al., Corpus callosum size example. S. Bookheimer's examples (Cereb. size, FFA, FC). 
+> * Autism example: Toro et al., Corpus callosum size example. S. Bookheimer's examples (cereb. size, FFA, FC). 
 
 
 <div class="notes">
@@ -97,14 +98,14 @@ R Toro:
 
 ## Statistical causes:(1)
 
-> * Lack of understanding of statistical issues and Power computation
-> * The usual issues apply:
+> * Lack of understanding of statistical issues and power computation
+> * The usual issues:
 >       - low power studies (Button et al, 2013)
 >       - P-hacking: Simmons et al. 2011, Simmonshon et al., 2014
 
 ## Example  
 
-> * From imaging genetics:
+> * From imaging genetics (BDNF - Hippocampus volume):
 > * ![Molendijk, 2012](./img/molendijk_2012_f4.pdf) 
 
 ----------------------------
@@ -112,8 +113,7 @@ R Toro:
 ## Statistical causes:(2)
 
 > * P value evil: will we eventually turn to Bayesian evidence? How ?
-> * No good understanding of the necessity to report null results 
-   - File drawer problem (Rosenthal, 1979)
+> * No good understanding of the necessity to report null results -> File drawer problem (Rosenthal, 1979)  
    - Emmergence of complex H0/H1, A. Afraz, 2014. 
 
 ## And if we stick to p-values: 
@@ -148,7 +148,6 @@ R Toro:
    scholarship. The actual scholarship is the complete software development
    environment and the complete set of instructions which generated the
    figures.""""
-   (Truer for applied math field, but also valid in Brain Imaging)
 > * Meta data capture and curation not implemented (parameters and process of data generation), no standards for meta data
 > * Computational environment packaging not used (Neurodebian VM, Docker, ...)
 
@@ -187,14 +186,16 @@ R Toro:
 
 > * Train the new generation of scientist in computation, statistics
 > * NIH answers: 
->   - DDI, checklists, online forum for open discussions, change in funding and bio, anonymize peer review, etc. 
+    - Data Discovery Index, checklists 
+    - online forum for open discussions, 
+    - change in funding and bio, anonymize peer review, etc. 
 > * Work with journals and editors to accept well powered null findings
 > * OSF, many lab and community based projects, METRICS (Meta-Research) institutes
 > * Reward people who produce re-usable science
 
 # Acknowledgement 
 
-* At Berkeley: M. Brett, J. Millman, F. Perez; Simpace interest group:  Courtney, Dan, Arielle, Katy, Kay; Ben, Mark
+* At Berkeley: M. Brett, J. Millman, F. Perez; Simpace interest group:  D. Sheltraw, C. Gallen, A. Tambini, K. K. Hwang; B. Inglis, M. D'Esposito. 
 * At INCF: Mathew Abrams, Linda Layon, Roman Valls
 * Nidash: David Kennedy, Satra Ghosh, Chris Gorgowleski, Nolan Nichols, Dave Keator, Camille Maumet, Guillaume Flandin, Tom Nichols, Russ Poldrack, etc
 * At Pasteur, Neurospin, MNI.
