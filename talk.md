@@ -10,33 +10,37 @@ Brain Imaging Center, Helen Wills Neuroscience Institute, UC Berkeley
 # Outline
 >     
 > * Science Reproducibility crisis evidence
-> * Causes and Impact
 > * What about brain imaging ? Some - but few - facts
+> * Causes  
+> * Impact
 > * What shall we do about it 
+
+> * Mesh terms reproducibility of results (100 in 2010) ![Mesh terms 2012](./img/mesh_term_reproducibility_results.pdf)
 
 # Science finding Reproducibility crisis evidence
 
 ## Preclinical oncology
 
-> * Begley C.G. & Ellis L. Nature, (2012): "6 out of 53 key findings could not be replicated"
+> * Begley C.G. & Ellis L. Nature, (2012): "6 out of 53 key findings in pre-clinical oncology could be fully replicated"
 
 ## Epidemiology
 
-> * Ioannidis 2011: “The FP/FN Ratio in Epidemiologic Studies:” 
+> * “The FP/FN Ratio in Epidemiologic Studies”, Ioannidis, 2011. 
+> * Reproducible Epidemiologic Research, Peng et al, 2006.
 
 ## In social sciences and in psychology
 
-> * Reproducibility Project: Psychology (open science foundation)
+> * Reproducibility Project in Psychology  (Open Science Framework)
 > * Simmons, et al. “... Undisclosed Flexibility ... Allows Presenting Anything as Significant.” 2011. 
-> * In cognitive neuroscience:  Barch, Deanna M., and Tal Yarkoni. “Special Issue on Reliability and Replication in Cognitive and Affective Neuroscience Research.”  2013.
+> * In cognitive neuroscience:  Barch, Deanna, and Yarkoni. “Special Issue on Reliability and Replication in Cognitive and Affective Neuroscience Research.”  2013.
 
 ---------------
 
 ## Genetics
 
 > * Ionannidis 2007: 16 SNPs hypothesized, check on 12-32k cancer/control: "... results are largely null." 
-> * The concept of endophenotype
-> * Many references and warning: eg:"Drinking from the fire hose ..." by Hunter and Kraft, 2007.
+> * The failing concept of endophenotype (Iacono, Psychophysiology, 2014)
+> * Many references and warnings: eg:"Drinking from the fire hose ..." by Hunter and Kraft, 2007.
 
 ## Neuroscience
 
@@ -47,7 +51,8 @@ Brain Imaging Center, Helen Wills Neuroscience Institute, UC Berkeley
 > * In general: Nature, "Reducing our irreproducibility", 2013.
     - New mechanism for independently replicating needed 
     - Easy to misinterpret artefacts as biologically important
-    - Too many sloppy mistakes 
+    - Too many sloppy mistakes
+> * NIH plans to enhance reproducibility (Nature, 2014, Collins and Tabak)
 
 ---------------
 
@@ -65,11 +70,11 @@ Brain Imaging Center, Helen Wills Neuroscience Institute, UC Berkeley
     - 5 studies, 17 findings: Bayesian analysis favored null hypothesis
     - But: only 36 subjects, while most original studies were better powered
 
-> * The Autism example: Toro et al., Corpus callosum size example.
+> * Autism example: Toro et al., Corpus callosum size example. S. Bookheimer's examples (Cereb. size, FFA, FC). 
 
-> * Analysis of large databases showing low concordance of small sample group analysis (Thirion et al., 2007)
 
 <div class="notes">
+ * Analysis of large databases showing low concordance of small sample group analysis (Thirion et al., 2007)
 
 R Toro: 
     We conducted a meta-analysis of the literature which suggested a
@@ -106,14 +111,14 @@ R Toro:
 
 ## Statistical causes:(2)
 
-> * P value evil: will we eventually turn to Bayesian evidence?
+> * P value evil: will we eventually turn to Bayesian evidence? How ?
 > * No good understanding of the necessity to report null results 
    - File drawer problem (Rosenthal, 1979)
    - Emmergence of complex H0/H1, A. Afraz, 2014. 
 
 ## And if we stick to p-values: 
 
-> * Which one to pick: Revised standard for statistical evidence (PNAS Johnson 2013)
+> * Which one to pick: Revised standard for statistical evidence (PNAS Johnson 2013) : 0.05 <=> BF$\in{[3,5]}$
 > * ![Johnson 2013, Significance](./img/Johnson_significance.pdf) 
 
 
@@ -145,46 +150,54 @@ R Toro:
    figures.""""
    (Truer for applied math field, but also valid in Brain Imaging)
 > * Meta data capture and curation not implemented (parameters and process of data generation), no standards for meta data
-> * Computational environment packaging not used (Neurodebian IMI, Docker, ...)
+> * Computational environment packaging not used (Neurodebian VM, Docker, ...)
 
 ----------------------------
 
-## Social causes
+## Social/systemic causes
 
-> * Publication based reward system (career, grants, fame, etc) is in general not working
-    towards good science:
+> * Publication based reward system (career, grants, fame, etc) + hyper competitive environment is in general not working towards good science:
     - favors speed over careful, __re-usable__, reproduced studies
     - favors high risk and rapid publications
     - impeeds data and code sharing even for publicly funded research
-> * High pressure for publication in competitive environment makes this a serious problem
 > * Positive finding publication bias and the file drawer problem 
-   - how this can delay scientific revolution (A. Afraz, 'We could all be astronomers')
+    - how this can delay scientific revolution (A. Afraz, 'We could all be astronomers')
+    - is science always self-correcting ? 
 
 ----------------------------
 
 ## Impact
 
-> * Large amount of resource wasted (talent, money, time)  
+> * Large amount of resource wasted (talent, money, time) 
 > * Discredit from the public and governments
 > * Slows down scientific and medical progress
-> * Impact on the type of work that can be started (counter example: biobank, bavarian cohorts).
-> * Increase young generation cynicism 
+> * Impact on the type of work that can be started (counter example: UK biobank, Bavarian cohorts).
+> * The system may select the most "productive" scientists - not necessarily the best
 
 # Conclusion: What shall we do about it 
 
 > * Adopt more stringent and better statistical and computational standards 
-> * Augment the awareness of these issues, advocate for data and code sharing as the standard in our field
-> * Adopt genetic research standards: every result should be replicated 
+> * Adopt genetic research standards for replication 
 > * Adopt clinical trial standards and pre-registration
+> * Augment the awareness of these issues, adopt data and code sharing as the standard in our field
+
+----------------------------
+
+# Conclusion: What shall we do about it 
+
 > * Train the new generation of scientist in computation, statistics
+> * NIH answers: 
+>   - DDI, checklists, online forum for open discussions, change in funding and bio, anonymize peer review, etc. 
+> * Work with journals and editors to accept well powered null findings
+> * OSF, many lab and community based projects, METRICS (Meta-Research) institutes
+> * Reward people who produce re-usable science
 
 # Acknowledgement 
 
-* My colleagues at Berkeley  (M. Brett, J. Millman, F. Perez, the Simpace group: Dan, Courtney, Arielle, Katy, Kay, ...)
-* My colleagues at INCF (Mathew Abrams, Linda Layon)
-* My colleagues of Nidash (David Kennedy, Satra Ghosh, Chris Gorgowleski, Nolan Nichols, Dave Keator, Camille Maumet, Guillaume Flandin, Tom Nichols, Russ Poldrack, etc)
-
-
+* At Berkeley: M. Brett, J. Millman, F. Perez; Simpace interest group:  Courtney, Dan, Arielle, Katy, Kay; Ben, Mark
+* At INCF: Mathew Abrams, Linda Layon, Roman Valls
+* Nidash: David Kennedy, Satra Ghosh, Chris Gorgowleski, Nolan Nichols, Dave Keator, Camille Maumet, Guillaume Flandin, Tom Nichols, Russ Poldrack, etc
+* At Pasteur, Neurospin, MNI.
 
 
 
